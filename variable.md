@@ -55,3 +55,35 @@ console.log(!window.abc) //window.abc = undefined
 
 var a = 100
 console.log(!!a) => 转换成false
+
+if (obj.a == null) {
+    //包含了obj.a === undefined & obj.a === null
+}
+
+(3). JS中的内置函数：(9个)
+Object
+Array
+Boolean
+Number
+String
+Function
+Date
+RegExp
+Error
+
+(4). 如何理解JSON：
+1. 内置对象而已(还有一个Math)
+2. 是一种数据格式
+3. 掌握2个API: JSON.stringify({a: 10, b: 20})
+   JSON.parse('{"a": 10, "b": 20}')
+
+不光是对象可以有属性，函数和数组都可以有属性
+function fn() {}
+fn.age = 22
+var fn1 = fn
+fn1.age = 21
+fn.age = 21
+
+0 NaN '' null undefined ---> 在if里面会转成false
+
+
