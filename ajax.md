@@ -57,16 +57,18 @@ xhr.status:
 
 同理，比如你向一个跨域网站请求一个资源
 <script src="http://coding.m.imooc.com/api.js">
-返回内容格式callback(数据) (动态生成)
+返回内容格式callback(数据) (动态生成)是一个函数调用
 
 <script>
 window.callback = function(data) {
     console.log(data)
+    //处理data
 }
 </script>
 <script src="http://coding.m.imooc.com/api.js"></script>
 
-请求外域api，返回一个js的片段，js片段执行这个函数，返回数据
+请求外域api，返回一个js的片段，js片段执行这个函数，返回函数调用，也就是执行callback(data)这个函数
+我们在外面定义好callback函数如何处理data就可以了。
 
 
 (3) 服务端设置http header
