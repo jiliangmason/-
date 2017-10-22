@@ -59,3 +59,9 @@ setTimeout(() => {}, 0)
 next -> setTimeout -> setImmediate
 
 大部分用setImmediate
+
+2.nodejs debug
+node --inspect-brk 14_debug.js :该命令的意思是从进入文件一开始就停止
+
+
+
